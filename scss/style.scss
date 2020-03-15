@@ -1,0 +1,222 @@
+$enable-responsive-font-sizes: true;
+@import 'bootstrap';
+
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+// NAV BAR
+
+.navbar-brand-text {
+  letter-spacing: 0.7rem;
+  font-weight: 800;
+}
+
+.navbar {
+  opacity: 0.7;
+}
+
+.navbar-nav a.nav-link.active {
+  color: #28a745 !important;
+}
+
+// HEADER
+
+#header {
+  height: 100vh;
+}
+
+.carousel-inner img {
+  object-fit: cover;
+  height: 73vh;
+  width: 100%;
+}
+
+// .carousel {
+//   margin-top: 3rem;
+//   padding: 1rem 1rem;
+//   border: 1rem solid green;
+// }
+
+.carousel {
+  // width: 400px;
+  // margin-top: 3rem;
+  padding: 1rem 1rem;
+  // border: 1rem solid transparent;
+  // border-image: linear-gradient(to bottom right, #008000c8, #16df16c8);
+  // border-image-slice: 1;
+  // padding: 25px;
+}
+
+.carousel-border {
+  min-height: fit-content;
+  border: 1rem solid transparent;
+  border-image: linear-gradient(to bottom right, #008000c8, #16df16c8);
+  border-image-slice: 1;
+}
+
+.col-md-4 {
+  position: relative;
+}
+
+.header__text {
+  text-align: justify;
+
+  @media (max-width: 767px) {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.triangle-topleft {
+  width: 0;
+  height: 0;
+  border-top: 12rem solid rgba(0, 128, 0, 0.302);
+  border-right: 13rem solid transparent;
+
+  z-index: -2;
+  position: absolute;
+  top: -2rem;
+  left: -1rem;
+}
+
+.triangle-bottomright {
+  width: 0;
+  height: 0;
+  border-bottom: 13rem solid rgba(0, 128, 0, 0.303);
+  border-left: 12rem solid transparent;
+  z-index: -2;
+  position: absolute;
+  top: 8rem;
+  left: 1rem;
+}
+
+.fab {
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    color: #16df16c8;
+  }
+}
+
+// ICON SECTION
+#home-icons {
+  position: relative;
+  color: #16df16c8;
+  min-height: 250px;
+  background: url('../img/yusuf-dundar-EdaOEg1QdSY-unsplash.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #0c4b00, #220f0b);
+    opacity: 0.6;
+  }
+}
+
+// .dark-overlay {
+//   position: absolute;
+//   top: 0rem;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background: rgba(0, 0, 0, 0.4);
+// }
+
+// HERB SECTION
+
+.herb-1 {
+  background: linear-gradient(to bottom, #008000c8, #16df16c8);
+  height: 100vh;
+  clip-path: polygon(0 100%, 20% 0, 100% 0, 100% 100%);
+
+  @media (max-width: 767px) {
+    clip-path: none;
+    height: auto;
+    padding: 3rem 0;
+  }
+}
+
+.herb-2 {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 128, 0, 0.783),
+    rgba(22, 223, 22, 0.783)
+  );
+
+  height: 100vh;
+  clip-path: polygon(0 100%, 0 0, 100% 0, 80% 100%);
+
+  @media (max-width: 767px) {
+    clip-path: none;
+    height: auto;
+    padding: 4rem 0;
+  }
+}
+
+.herbs__image {
+  max-width: 60%;
+
+  @media (max-width: 767px) {
+    max-width: 40%;
+  }
+}
+
+// .herb__text {
+//   background: linear-gradient(
+//     to bottom,
+//     rgba(0, 128, 0, 0.783),
+//     rgba(22, 223, 22, 0.783)
+//   );
+
+//   height: 100vh;
+// }
+
+#herbs {
+  overflow-x: hidden;
+}
+
+// GALLERY
+
+// #gallery {
+//   height: 100vh;
+// }
+
+.gallery__image-mb {
+  @media (min-width: 370px) {
+    margin-bottom: 2rem;
+  }
+}
+
+#contact {
+  position: relative;
+  color: #16df16c8;
+  // min-height: 600px;
+  background: url('../img/yusuf-dundar-EdaOEg1QdSY-unsplash.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #0c4b00, #220f0b);
+    opacity: 0.6;
+  }
+}
